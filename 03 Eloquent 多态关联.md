@@ -30,7 +30,22 @@ php artisan tinker
 namespace App
 factory(Lesson::class, 10)->create()
 
+2017_03_28_055214_create_comments_table.php
 php artisan make:model Comment -m
+
+```
+public function up()
+{
+    Schema::create('comments', function (Blueprint $table) {
+        $table->increments('id');
+        $table->integer('commentable_id');
+        $table->string('commentable_type');
+        $table->text('body');
+        $table->timestamps();
+    });
+}
+```
+
 php artisan migrate
 
 Comment.php
