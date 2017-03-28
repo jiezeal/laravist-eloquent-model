@@ -12,5 +12,10 @@ public function posts(){
 
 web.php
 ```
-
+Route::get('/', function () {
+    $data = \App\User::with('posts')->where('id', '>', 10)->get();
+    dd($data);
+    
+    return view('welcome');
+});
 ```
