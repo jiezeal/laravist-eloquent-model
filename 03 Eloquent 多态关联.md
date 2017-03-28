@@ -24,6 +24,8 @@ $factory->define(App\Lesson::class, function (Faker\Generator $faker) {
 });
 ```
 
-php artisan 
+php artisan tinker
+namespace App
+factory(Lesson::class, 10)->create()
 
 php artisan make:model Comment -m
