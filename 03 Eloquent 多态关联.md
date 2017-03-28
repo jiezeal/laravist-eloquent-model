@@ -39,6 +39,12 @@ $lesson = Lesson::find(1)
 $lesson->unguard()
 $lesson->comments()->create(['body'=>'lesson 1'])
 
+$post = Post::find(10)
+$post->unguard()
+$post->comments()->create(['body'=>'post 10 is greate'])
+
+
+
 $lesson = Lesson::find(1)
 $lesson->comments->toArray()
 
