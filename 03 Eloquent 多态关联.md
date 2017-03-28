@@ -53,6 +53,7 @@ $post->comments->toArray()
 
 $comment = Comment::find(1)
 $comment->commentable
+
 $comment = Comment::find(2)
 $comment->commentable
 
