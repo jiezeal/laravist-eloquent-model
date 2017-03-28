@@ -7,5 +7,15 @@ php artisan make:model Activity -m
 
 2017_03_28_065132_create_activities_table.php
 ```
-
+public function up()
+{
+    Schema::create('activities', function (Blueprint $table) {
+        $table->increments('id');
+        $table->integer('user_id');
+        $table->integer('conversation_id');
+        $table->string('conversation_type');
+        $table->timestamps();
+    });
+}
 ```
+
