@@ -30,9 +30,9 @@ php artisan tinker
 namespace App
 factory(Lesson::class, 10)->create()
 
-2017_03_28_055214_create_comments_table.php
 php artisan make:model Comment -m
 
+2017_03_28_055214_create_comments_table.php
 ```
 public function up()
 {
