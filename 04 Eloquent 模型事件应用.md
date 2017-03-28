@@ -24,10 +24,17 @@ php artisan migrate
 Activity.php
 ```
 /**
- * @return \Illuminate\Database\Eloquent\Relations\HasMany
+ * @return \Illuminate\Database\Eloquent\Relations\MorphTo
  */
-public function activities(){
-    return $this->hasMany(Activity::class);
+public function conversation(){
+    return $this->morphTo();
+}
+
+/**
+ * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+ */
+public function user(){
+    return $this->belongsTo(User::class);
 }
 ```
 
