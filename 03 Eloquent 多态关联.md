@@ -33,8 +33,16 @@ php artisan make:model Comment -m
 
 
 
+$lesson = Lesson::find(1)
+$lesson->comments->toArray()
 
+$post = Post::find(2)
+$post->comments->toArray()
 
+$comment = Comment::find(1)
+$comment->commentable
+$comment = Comment::find(2)
+$comment->commentable
 
 
 
