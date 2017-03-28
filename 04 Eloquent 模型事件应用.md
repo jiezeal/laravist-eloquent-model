@@ -4,3 +4,4 @@
 参照：[https://www.laravist.com/user/daryl](https://www.laravist.com/user/daryl)  
 
 php artisan make:model Activity -m
+
