@@ -16,4 +16,17 @@ public function up()
 
 php artisan migrate
 
+ModelFactory.php
+```
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Post::class, function (Faker\Generator $faker) {
+    $userIds = [];
+    return [
+        'title' => $faker->sentence,
+        'body' => $faker->paragraph,
+        'user_id' => $faker->randomElements($userIds)
+    ];
+});
+```
+
 
