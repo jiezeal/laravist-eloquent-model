@@ -100,6 +100,8 @@ Route::get('/', function () {
 
 ![](image/screenshot_1490687062781.png)
 
+![](image/screenshot_1490687127181.png)
+
 
 
 
