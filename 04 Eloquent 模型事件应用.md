@@ -87,6 +87,23 @@ trait RecordActivity
 }
 ```
 
+Comment.php
+```
+class Comment extends Model
+{
+    use RecordActivity;
+
+    protected $fillable = ['body'];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+     */
+    public function commentable(){
+        return $this->morphTo();
+    }
+}
+```
+
 web.php
 ```
 Auth::loginUsingId(5);
