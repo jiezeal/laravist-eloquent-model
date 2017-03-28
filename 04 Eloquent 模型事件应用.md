@@ -5,4 +5,7 @@
 
 php artisan make:model Activity -m
 
+2017_03_28_065132_create_activities_table.php
+```
 
+```
