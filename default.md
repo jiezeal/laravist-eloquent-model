@@ -29,4 +29,7 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
 });
 ```
 
+php artisan tinker
+namespace App;
+factory(User::class, 20)->create();
 
