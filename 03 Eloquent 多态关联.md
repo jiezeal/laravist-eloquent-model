@@ -45,6 +45,7 @@ $post->comments()->create(['body'=>'post 10 is greate'])
 
 ![](image/screenshot_1490682841709.png)
 
+
 $lesson = Lesson::find(1)
 $lesson->comments->toArray()
 
