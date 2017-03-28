@@ -35,7 +35,9 @@ php artisan migrate
 
 php artisan tinker
 namespace App
-
+$lesson = Lesson::find(1)
+$lesson->unguard()
+$lesson->comments()->create(['body'=>'lesson 1'])
 
 $lesson = Lesson::find(1)
 $lesson->comments->toArray()
