@@ -14,6 +14,8 @@ public function up()
 }
 ```
 
+php artisan migrate
+
 ModelFactory.php
 ```
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
