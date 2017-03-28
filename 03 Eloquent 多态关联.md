@@ -33,6 +33,8 @@ factory(Lesson::class, 10)->create()
 php artisan make:model Comment -m
 php artisan migrate
 
+
+
 php artisan tinker
 namespace App
 $lesson = Lesson::find(1)
