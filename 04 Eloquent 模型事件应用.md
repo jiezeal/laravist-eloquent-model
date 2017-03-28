@@ -189,7 +189,27 @@ Route::get('/', function () {
 
 ![](image/screenshot_1490688305395.png)
 
+web.php
+```
+Auth::loginUsingId(5);
 
+Route::get('/', function () {
+//    $post = \App\Post::find(2);
+//    $comment = $post->comments()->create(['body'=>'use trait']);
+//    return $comment;
+
+//    $post = \App\Post::create([
+//        'user_id' => Auth::id(),
+//        'title' => 'trait title',
+//        'body' => 'trait body'
+//    ]);
+//    return $post;
+
+    $user = Auth::user();
+    $activities = $user->activities;
+    return $activities;
+});
+```
 
 
 
