@@ -114,6 +114,7 @@ Route::get('/', function () {
     return $comment;
 });
 ```
+打开浏览器运行一下
 
 ![](image/screenshot_1490687062781.png)
 
@@ -182,6 +183,8 @@ Route::get('/', function () {
     return $post;
 });
 ```
+打开浏览器运行一下
+
 
 
 
