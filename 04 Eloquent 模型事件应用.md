@@ -220,4 +220,4 @@ Route::get('/', function () {
 ```
 打开浏览器运行一下
 
-![](image/screenshot_1490693301519.png)
+![](image/screenshot_1490693645179.png)
