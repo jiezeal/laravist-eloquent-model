@@ -210,6 +210,6 @@ Route::get('/', function () {
     return $activities;
 });
 ```
-
+打开浏览器运行一下
 
 
