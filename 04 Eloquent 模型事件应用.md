@@ -24,6 +24,11 @@ php artisan migrate
 Activity.php
 ```
 /**
+ * @var array
+ */
+protected $fillable = ['user_id', 'conversation_id', 'conversation_type'];
+
+/**
  * @return \Illuminate\Database\Eloquent\Relations\MorphTo
  */
 public function conversation(){
@@ -109,7 +114,7 @@ web.php
 Auth::loginUsingId(5);
 
 Route::get('/', function () {
-//    $post = \App\Post::find(2);
+//    $post = \App\Post::find(1);
     $post = \App\Post::find(2);
     $comment = $post->comments()->create(['body'=>'use trait']);
     return $comment;
