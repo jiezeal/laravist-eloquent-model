@@ -109,7 +109,7 @@ web.php
 Auth::loginUsingId(5);
 
 Route::get('/', function () {
-// $post = \App\Post::find(1);
+	// $post = \App\Post::find(1);
     $post = \App\Post::find(2);
     $comment = $post->comments()->create(['body'=>'use trait']);
     return $comment;
