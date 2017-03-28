@@ -161,4 +161,28 @@ class Post extends Model
 }
 ```
 
+web.php
+```
+Auth::loginUsingId(5);
+
+Route::get('/', function () {
+//    $post = \App\Post::find(2);
+//    $comment = $post->comments()->create(['body'=>'use trait']);
+//    return $comment;
+
+//    $user = Auth::user();
+//    $activities = $user->activities;
+//    return $activities;
+
+    $post = \App\Post::create([
+        'user_id' => Auth::id(),
+        'title' => 'trait title',
+        'body' => 'trait body'
+    ]);
+    return $post;
+});
+```
+
+
+
 
