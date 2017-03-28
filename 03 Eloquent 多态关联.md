@@ -43,6 +43,8 @@ public function commentable(){
 }
 ```
 
+
+
 php artisan tinker
 namespace App
 $lesson = Lesson::find(1)
