@@ -38,3 +38,12 @@ public function user(){
 }
 ```
 
+User.php
+```
+/**
+ * @return \Illuminate\Database\Eloquent\Relations\HasMany
+ */
+public function activities(){
+    return $this->hasMany(Activity::class);
+}
+```
