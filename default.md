@@ -14,3 +14,4 @@ public function up()
 }
 ```
 
+php artisan migrate
