@@ -58,15 +58,3 @@ $comment->commentable
 
 $comment = Comment::find(2)
 $comment->commentable
-
-
-
-
-
-
-
-
-
-
-
-
