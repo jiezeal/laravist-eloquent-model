@@ -43,6 +43,7 @@ $post = Post::find(10)
 $post->unguard()
 $post->comments()->create(['body'=>'post 10 is greate'])
 
+![](image/screenshot_1490682741696.png)
 
 
 $lesson = Lesson::find(1)
