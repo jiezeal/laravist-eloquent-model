@@ -48,7 +48,7 @@ $post->comments()->create(['body'=>'post 10 is greate'])
 $lesson = Lesson::find(1)
 $lesson->comments->toArray()
 
-$post = Post::find(2)
+$post = Post::find(10)
 $post->comments->toArray()
 
 $comment = Comment::find(1)
