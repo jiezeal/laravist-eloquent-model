@@ -33,7 +33,15 @@ factory(Lesson::class, 10)->create()
 php artisan make:model Comment -m
 php artisan migrate
 
-
+Comment.php
+```
+/**
+ * @return \Illuminate\Database\Eloquent\Relations\MorphTo
+ */
+public function commentable(){
+    return $this->morphTo();
+}
+```
 
 php artisan tinker
 namespace App
