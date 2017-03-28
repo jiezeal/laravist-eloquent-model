@@ -102,6 +102,16 @@ Route::get('/', function () {
 
 ![](image/screenshot_1490687127181.png)
 
+User.php
+```
+/**
+ * @return \Illuminate\Database\Eloquent\Relations\HasMany
+ */
+public function activities(){
+    return $this->hasMany(Activity::class)->with('conversation');
+}
+```
+
 web.php
 ```
 Auth::loginUsingId(5);
