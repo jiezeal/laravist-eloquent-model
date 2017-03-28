@@ -5,3 +5,4 @@
 
 php artisan make:model Activity -m
 
+
